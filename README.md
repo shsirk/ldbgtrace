@@ -22,13 +22,6 @@ TODO:
 2. support different symbol readers
 3. support different coverage analyzers
 4. shared module coverage? (currently only support statically compiled)
-(Notes;
-  currently in progrese. when ptraced to new process, we don't get loaded modules, look for ptrace clone option
- )
-5. timeout support
-(Notes;
-   currently done outside process using 'killall' command
- ) 
-
+5. timeout support for auto kill - can be done using 'killall' command
 6. think of more optimization in symbol readers and trace writers
 7. single load multi-trace-invocation provision (in case of generating more trace for input suite) may ne shared lib
