@@ -263,6 +263,7 @@ bool dbgtracer::trace(char** args, char** envp)
 bool dbgtracer::trace(unsigned int pid)
 {
     ptrace(PTRACE_ATTACH, pid, NULL, NULL);
+    //TODO attach to threads
     wait(&_w_status);
     debugloop(pid);
 
